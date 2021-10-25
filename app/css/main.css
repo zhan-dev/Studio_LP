@@ -1,0 +1,301 @@
+@import url(c:\Users\SAY10\Desktop\Studio_LP\app\css\fonts.css);
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1920px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionWrapper {
+  margin: 0px 180px;
+}
+
+.btnSmall {
+  line-height: 16px;
+  font-size: 16px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #ff3c2d;
+  font-weight: normal;
+  border-radius: 3px;
+  border: none;
+}
+
+.btnStandart {
+  line-height: 18px;
+  font-size: 18px;
+  padding: 14px 40px;
+  color: white;
+  background-color: #ff3c2d;
+  font-weight: normal;
+  border-radius: 3px;
+  border: none;
+}
+
+nav {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+
+nav .navWrapper {
+  margin: 25px 100px;
+  height: 54px;
+  line-height: 54px;
+}
+
+nav .logo {
+  width: 132px;
+  height: 54px;
+}
+
+nav .menu a {
+  margin-right: 40px;
+  color: #222222;
+  text-decoration: none;
+}
+
+nav .menu a:hover {
+  color: black;
+  border-bottom: 1px dotted #222222;
+}
+
+nav .bookNow {
+  text-align: right;
+}
+
+nav .bookNow input {
+  margin-right: 50px;
+}
+
+nav .bookNow .social {
+  display: inline-block;
+}
+
+nav .bookNow .social a {
+  margin-left: 15px;
+}
+
+.header {
+  margin-top: 100px;
+  background-color: #222222;
+  position: relative;
+}
+
+.header .opacity {
+  height: 510px;
+}
+
+.header .opacity::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(34, 34, 34, 0.45);
+}
+
+.header .opacity img {
+  width: 100%;
+  height: 100%;
+}
+
+.header h1 {
+  font-size: 70px;
+  color: white;
+  line-height: 80px;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.header span {
+  color: white;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.header input {
+  display: block;
+  margin-top: 50px;
+}
+
+.header-session {
+  position: absolute;
+  top: 0;
+}
+
+main {
+  margin-top: 100px;
+}
+
+main .sessions {
+  text-align: center;
+}
+
+main .sessions-left {
+  padding: 100px 0;
+  background-color: #222222;
+  color: white;
+}
+
+main .sessions-left h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+main .sessions-left aside {
+  text-align: left;
+  margin: 0 280px;
+}
+
+main .sessions-left aside p {
+  border-bottom: 2px solid #4e4e4e;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+main .sessions-left aside p.f::before {
+  content: "1 ";
+  margin-left: -22px;
+  font-size: 80px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #4e4e4e;
+}
+
+main .sessions-left aside p.s::before {
+  content: "2 ";
+  margin-left: -22px;
+  font-size: 80px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #4e4e4e;
+}
+
+main .sessions-left aside p.t::before {
+  content: "3 ";
+  margin-left: -22px;
+  font-size: 80px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 52px;
+  color: #4e4e4e;
+}
+
+main .sessions-left input {
+  margin-top: 80px;
+}
+
+main .sessions-right {
+  padding: 100px 0;
+  background-color: #f6f6f6;
+  color: #222222;
+}
+
+main .sessions-right h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+main .sessions-right aside {
+  text-align: left;
+  margin: 0 280px;
+}
+
+main .sessions-right aside p {
+  border-bottom: 2px solid #cccccc;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+main .sessions-right aside p.f::before {
+  content: "1 ";
+  margin-left: -22px;
+  font-size: 80px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #cccccc;
+}
+
+main .sessions-right aside p.s::before {
+  content: "2 ";
+  margin-left: -22px;
+  font-size: 80px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #cccccc;
+}
+
+main .sessions-right aside p.t::before {
+  content: "3 ";
+  margin-left: -22px;
+  font-size: 80px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 52px;
+  color: #cccccc;
+}
+
+main .sessions-right input {
+  margin-top: 80px;
+}
+
+main .map {
+  position: relative;
+}
+
+main .map-search {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 50px 275px 50px 50px;
+  border-radius: 3px;
+}
+
+main .map-search h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+main .map-search p {
+  font-weight: 500;
+}
+
+main .map-search .search_inp {
+  padding: 11px;
+  border: none;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+
+main .map-search .search_btn {
+  margin-left: -5px;
+}
+/*# sourceMappingURL=main.css.map */
