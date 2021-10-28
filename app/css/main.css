@@ -298,4 +298,44 @@ main .map-search .search_inp {
 main .map-search .search_btn {
   margin-left: -5px;
 }
+
+main .service {
+  margin-top: 100px;
+  text-align: center;
+}
+
+main .service h2 {
+  margin-top: 15px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+main .service-nav {
+  margin-top: 35px;
+}
+
+main .service-nav ul {
+  padding-left: 0;
+}
+
+main .service-nav__item {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 40px;
+}
+
+main .service-nav__item a {
+  text-decoration: none;
+  color: #ababab;
+}
+
+main .service-nav__item a:hover {
+  color: #222222;
+  padding-bottom: 4px;
+  border-bottom: 2px solid red;
+}
+
+main .gallery {
+  margin-top: 50px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -293,5 +293,39 @@ main {
     }
   }
 
+  .service {
+    margin-top: 100px;
+    text-align: center;
+    
+    h2 {
+      margin-top: 15px;
+      font-size: 50px;
+      font-weight: 600;
+    }
+    &-nav {
+      margin-top: 35px;
+      ul {
+        padding-left: 0;
+      }
+      &__item {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 40px;
+        a {
+          text-decoration: none;
+          color: $gray_text;
+          &:hover {
+            color: $black_text;
+            padding-bottom: 4px;
+            border-bottom: 2px solid red;
+          }
+        }
+      }
+    }
+  }
+  .gallery {
+    margin-top: 50px;
+  }
+
   
 }
