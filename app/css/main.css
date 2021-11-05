@@ -1,4 +1,4 @@
-@import url(c:\Users\SAY10\Desktop\Studio_LP\app\css\fonts.css);
+@import url("fonts.css");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -8,6 +8,10 @@ html {
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -335,7 +339,260 @@ main .service-nav__item a:hover {
   border-bottom: 2px solid red;
 }
 
+main .arrow {
+  display: inline-block;
+  position: absolute;
+  height: 30px;
+  width: 3px;
+}
+
+main .arrow:before {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: -2px;
+  left: -3px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+main .arrow:after {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: -2px;
+  right: -3px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+main .arrow-service {
+  background: white;
+  left: 150px;
+  top: 31px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main .arrow-service:before {
+  background: white;
+}
+
+main .arrow-service:after {
+  background: white;
+}
+
+main .arrow__left {
+  background: #222222;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+main .arrow__left:before {
+  background: #222222;
+}
+
+main .arrow__left:after {
+  background: #222222;
+}
+
+main .arrow__right {
+  background: #222222;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+main .arrow__right:before {
+  background: #222222;
+}
+
+main .arrow__right:after {
+  background: #222222;
+}
+
 main .gallery {
   margin-top: 50px;
+}
+
+main .gallery__girl {
+  overflow: hidden;
+}
+
+main .gallery-service__block {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 20px;
+  width: 50%;
+  max-width: 350px;
+}
+
+main .gallery-service__block img {
+  width: 100%;
+}
+
+main .gallery-service__block:hover {
+  -webkit-box-shadow: 1px 1px 10px 1px #ababab;
+          box-shadow: 1px 1px 10px 1px #ababab;
+}
+
+main .gallery-service__block:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.66)), color-stop(22%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0) 22%);
+}
+
+main .gallery-service__block .__info {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+main .gallery-service__block .__info a {
+  color: white;
+}
+
+main .gallery-service__block .__info input {
+  color: white;
+  border: none;
+  display: block;
+  background-color: #ff3c2d;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 4px 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+main .gallery-service-arrows .wrap {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  width: 50%;
+  max-width: 350px;
+  height: 28px;
+  background-color: #f6f6f6;
+}
+
+main .usefulTips {
+  margin-top: 150px;
+  background-color: #f6f6f6;
+}
+
+main .usefulTips-text {
+  margin-top: 80px;
+}
+
+main .usefulTips-text h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+main .usefulTips-text p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main .usefulTips-text img {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+main .usefulTips-block {
+  margin-top: 80px;
+}
+
+main .usefulTips-block__img {
+  margin-bottom: 85px;
+}
+
+main .usefulTips-block-tips {
+  margin-bottom: 20px;
+  max-width: 320px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  border-bottom: 2px solid #cccccc;
+}
+
+main .usefulTips-block-tips img {
+  float: left;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-top: -10px;
+}
+
+main .usefulTips .headshot-service {
+  background-color: #222222;
+  color: white;
+  padding: 80px 50px 50px;
+  margin-top: -50px;
+}
+
+.scroll {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: gray;
+  margin-left: 50px;
+  border-radius: 30px;
+}
+
+.arrowTooTop {
+  display: inline-block;
+  position: absolute;
+  height: 30px;
+  width: 3px;
+}
+
+.arrowTooTop:before {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: -2px;
+  left: -3px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.arrowTooTop:after {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: -2px;
+  right: -3px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.arrowTooTop-this {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: black;
+}
+
+.arrowTooTop-this:before {
+  background: black;
+}
+
+.arrowTooTop-this:after {
+  background: black;
 }
 /*# sourceMappingURL=main.css.map */

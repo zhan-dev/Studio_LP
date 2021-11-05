@@ -6,7 +6,7 @@ $(document).ready(function(){
   $("p.t:empty").hide();
 
 
-  $('.yourClass').slick({
+  $('.gallery-service').slick({
     arrows:true, // показать стрелки
     dots:false, // не показывать точки
     autoplay:true,
@@ -16,3 +16,12 @@ $(document).ready(function(){
   });
 
 });
+
+//скрытие и открытие блока в галерее (galery service)
+$(".__info").hide();
+$(".gallery-service__block").hover(function(){
+  $('.__info', this).show();
+},function(){
+    $('.__info').hide();
+});
+ 
