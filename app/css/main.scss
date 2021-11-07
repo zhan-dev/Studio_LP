@@ -458,6 +458,7 @@ main {
   //UsefulTips
   .usefulTips {
     margin-top: 150px;
+    padding-bottom: 100px;
     background-color: $gray_light_fone;
     &-text {
       margin-top: 80px;
@@ -495,10 +496,74 @@ main {
       }
     }
     .headshot-service {
-      background-color: #222222;
+      background-color: $black_text;
       color: white;
-      padding: 80px 50px 50px;
+      padding: 50px 50px 10px;
       margin-top: -50px;
+      h3 {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        font-size: 22px;
+      }
+      p {
+        margin-bottom: 40px;
+        font-size: 18px;
+        small {
+          border-bottom: 1px solid red;
+        }
+      }
+    }
+  }
+//all Clients
+  .allClients {
+    background-color: $black_text;
+    color:white;
+    z-index: 999;
+    text-align: center;
+    padding-bottom: 200px;
+
+
+    h2 {
+      padding-top: 100px;
+      font-size: 50px;
+    }
+    .clients {
+      margin-top: 56px;
+
+      &-block {
+        max-width: 490px;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+        p {
+          text-align: left;
+          margin-top: 30px;
+          margin-left: 45px;
+          font-size: 18px;
+          font-style: italic;
+          position: relative;
+          &::before {
+            content: url("../img/clients/icon_cl.png");
+            position: absolute;
+            top: -15px;
+            left: -45px;
+          }
+        }
+      }
+    }
+    .nameStar {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      small {
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+      img {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 
@@ -508,11 +573,19 @@ main {
 
 
 
+
+
+
+
+
+
+
+
 .scroll {
   position: relative;
   width: 60px;
   height: 60px;
-  background-color: gray;
+  background-color: $gray_light_fone;
   margin-left: 50px;
   border-radius: 30px;
 }
