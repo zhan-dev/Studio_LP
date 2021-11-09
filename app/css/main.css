@@ -102,6 +102,7 @@ nav .bookNow .social a {
 
 .header .opacity {
   height: 510px;
+  overflow: hidden;
 }
 
 .header .opacity::before {
@@ -112,11 +113,6 @@ nav .bookNow .social a {
   bottom: 0;
   left: 0;
   background: rgba(34, 34, 34, 0.45);
-}
-
-.header .opacity img {
-  width: 100%;
-  height: 100%;
 }
 
 .header h1 {
@@ -616,6 +612,86 @@ main .allClients .nameStar small {
 main .allClients .nameStar img {
   width: 15px;
   height: 15px;
+  display: inline-block;
+}
+
+main .clients .slick-dots {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .clients .slick-dots li {
+  margin: 0 2px;
+}
+
+main .clients .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 2px solid red;
+}
+
+main .clients .slick-dots button {
+  font-size: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+main .fastSession {
+  position: relative;
+  color: white;
+}
+
+main .fastSession__img {
+  overflow: hidden;
+  position: relative;
+}
+
+main .fastSession__img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(34, 34, 34, 0.65);
+}
+
+main .fastSession__border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid #6e6e6e;
+  height: 350px;
+  width: 96%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 150px;
+}
+
+main .fastSession__border h2 {
+  font-size: 50px;
+}
+
+main .fastSession__border input {
+  margin-right: 15px;
+  padding: 12px 50px;
 }
 
 .scroll {
@@ -624,7 +700,16 @@ main .allClients .nameStar img {
   height: 60px;
   background-color: #f6f6f6;
   margin-left: 50px;
+  margin-top: -100px;
   border-radius: 30px;
+}
+
+.scroll:active {
+  height: 66px;
+  -webkit-box-shadow: 0px 2px 10px 1px #ababab;
+          box-shadow: 0px 2px 10px 1px #ababab;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .arrowTooTop {
