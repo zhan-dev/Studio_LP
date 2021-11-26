@@ -849,6 +849,11 @@ footer .copyRights {
   line-height: 60px;
 }
 
+footer .copyRights .row {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .scroll {
   position: absolute;
   bottom: 0;
